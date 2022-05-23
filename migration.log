@@ -1,0 +1,78 @@
+2022-05-19T20:25:51.019+0700	INFO	seagate-hackathon/migrationController.go:325	Getting object info	{"key": "hackathon/sample (1).zip"}
+2022-05-19T20:25:51.469+0700	INFO	seagate-hackathon/migrationController.go:325	Object size 81065987	{"key": "hackathon/sample (1).zip"}
+2022-05-19T20:25:51.469+0700	INFO	seagate-hackathon/migrationController.go:325	Large object migration	{"key": "hackathon/sample (1).zip"}
+2022-05-19T20:25:51.469+0700	INFO	seagate-hackathon/migrationController.go:325	Creating multipart upload	{"key": "hackathon/sample (1).zip"}
+2022-05-19T20:25:51.769+0700	INFO	seagate-hackathon/migrationController.go:325	Number of chunk 5	{"key": "hackathon/sample (1).zip"}
+2022-05-19T20:25:51.770+0700	INFO	seagate-hackathon/migrationController.go:325	Start migrating part	{"key": "hackathon/sample (1).zip", "index": 5}
+2022-05-19T20:25:51.770+0700	INFO	seagate-hackathon/migrationController.go:325	Start migrating part	{"key": "hackathon/sample (1).zip", "index": 1}
+2022-05-19T20:25:51.770+0700	INFO	seagate-hackathon/migrationController.go:325	Start migrating part	{"key": "hackathon/sample (1).zip", "index": 3}
+2022-05-19T20:25:51.770+0700	INFO	seagate-hackathon/migrationController.go:325	Downloading part	{"key": "hackathon/sample (1).zip", "range": "bytes=0-19999999"}
+2022-05-19T20:25:51.770+0700	INFO	seagate-hackathon/migrationController.go:325	Downloading part	{"key": "hackathon/sample (1).zip", "range": "bytes=40000000-59999999"}
+2022-05-19T20:25:51.770+0700	INFO	seagate-hackathon/migrationController.go:325	Downloading part	{"key": "hackathon/sample (1).zip", "range": "bytes=80000000-81065986"}
+2022-05-19T20:25:51.770+0700	INFO	seagate-hackathon/migrationController.go:325	Start migrating part	{"key": "hackathon/sample (1).zip", "index": 4}
+2022-05-19T20:25:51.770+0700	INFO	seagate-hackathon/migrationController.go:325	Start migrating part	{"key": "hackathon/sample (1).zip", "index": 2}
+2022-05-19T20:25:51.770+0700	INFO	seagate-hackathon/migrationController.go:325	Downloading part	{"key": "hackathon/sample (1).zip", "range": "bytes=60000000-79999999"}
+2022-05-19T20:25:51.770+0700	INFO	seagate-hackathon/migrationController.go:325	Downloading part	{"key": "hackathon/sample (1).zip", "range": "bytes=20000000-39999999"}
+2022-05-19T20:25:53.523+0700	INFO	seagate-hackathon/migrationController.go:325	Upload object part	{"key": "hackathon/sample (1).zip", "index": 5, "size": 1065987}
+2022-05-19T20:25:56.147+0700	INFO	seagate-hackathon/migrationController.go:325	Complete migrating part	{"key": "hackathon/sample (1).zip", "index": 5}
+2022-05-19T20:25:59.369+0700	INFO	seagate-hackathon/migrationController.go:325	Upload object part	{"key": "hackathon/sample (1).zip", "index": 1, "size": 20000000}
+2022-05-19T20:26:03.046+0700	INFO	seagate-hackathon/migrationController.go:325	Upload object part	{"key": "hackathon/sample (1).zip", "index": 3, "size": 20000000}
+2022-05-19T20:26:04.867+0700	INFO	seagate-hackathon/migrationController.go:325	Upload object part	{"key": "hackathon/sample (1).zip", "index": 4, "size": 20000000}
+2022-05-19T20:26:05.161+0700	INFO	seagate-hackathon/migrationController.go:325	Complete migrating part	{"key": "hackathon/sample (1).zip", "index": 1}
+2022-05-19T20:26:07.364+0700	INFO	seagate-hackathon/migrationController.go:325	Upload object part	{"key": "hackathon/sample (1).zip", "index": 2, "size": 20000000}
+2022-05-19T20:26:10.531+0700	INFO	seagate-hackathon/migrationController.go:325	Complete migrating part	{"key": "hackathon/sample (1).zip", "index": 2}
+2022-05-19T20:26:16.875+0700	INFO	seagate-hackathon/migrationController.go:325	Complete migrating part	{"key": "hackathon/sample (1).zip", "index": 4}
+2022-05-19T20:26:17.563+0700	INFO	seagate-hackathon/migrationController.go:325	Completing multipart upload	{"key": "hackathon/sample (1).zip"}
+2022-05-19T20:26:17.763+0700	INFO	seagate-hackathon/migrationController.go:325	Completed object	{"key": "hackathon/sample (1).zip"}
+2022-05-19T20:26:17.763+0700	INFO	seagate-hackathon/migrationController.go:325	Complete migrating part	{"key": "hackathon/sample (1).zip", "index": 3}
+2022-05-19T20:26:17.763+0700	INFO	seagate-hackathon/migrationController.go:325	Complete object migration	{"key": "hackathon/sample (1).zip"}
+2022-05-19T22:12:09.179+0700	INFO	migration/controller.go:327	Getting object info	{"key": "hackathon/sample (1).zip"}
+2022-05-19T22:12:09.749+0700	INFO	migration/controller.go:327	Object size 81065987	{"key": "hackathon/sample (1).zip"}
+2022-05-19T22:12:09.749+0700	INFO	migration/controller.go:327	Large object migration	{"key": "hackathon/sample (1).zip"}
+2022-05-19T22:12:09.749+0700	INFO	migration/controller.go:327	Creating multipart upload	{"key": "hackathon/sample (1).zip"}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Number of chunk 9	{"key": "hackathon/sample (1).zip"}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Start migrating part	{"key": "hackathon/sample (1).zip", "index": 9}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Start migrating part	{"key": "hackathon/sample (1).zip", "index": 2}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Downloading part	{"key": "hackathon/sample (1).zip", "range": "bytes=80000000-81065986"}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Downloading part	{"key": "hackathon/sample (1).zip", "range": "bytes=10000000-19999999"}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Start migrating part	{"key": "hackathon/sample (1).zip", "index": 7}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Start migrating part	{"key": "hackathon/sample (1).zip", "index": 5}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Downloading part	{"key": "hackathon/sample (1).zip", "range": "bytes=60000000-69999999"}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Start migrating part	{"key": "hackathon/sample (1).zip", "index": 3}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Downloading part	{"key": "hackathon/sample (1).zip", "range": "bytes=40000000-49999999"}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Downloading part	{"key": "hackathon/sample (1).zip", "range": "bytes=20000000-29999999"}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Start migrating part	{"key": "hackathon/sample (1).zip", "index": 4}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Downloading part	{"key": "hackathon/sample (1).zip", "range": "bytes=30000000-39999999"}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Start migrating part	{"key": "hackathon/sample (1).zip", "index": 1}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Downloading part	{"key": "hackathon/sample (1).zip", "range": "bytes=0-9999999"}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Start migrating part	{"key": "hackathon/sample (1).zip", "index": 8}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Downloading part	{"key": "hackathon/sample (1).zip", "range": "bytes=70000000-79999999"}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Start migrating part	{"key": "hackathon/sample (1).zip", "index": 6}
+2022-05-19T22:12:10.060+0700	INFO	migration/controller.go:327	Downloading part	{"key": "hackathon/sample (1).zip", "range": "bytes=50000000-59999999"}
+2022-05-19T22:12:12.068+0700	INFO	migration/controller.go:327	Upload object part	{"key": "hackathon/sample (1).zip", "index": 9, "size": 1065987}
+2022-05-19T22:12:13.436+0700	INFO	migration/controller.go:327	Upload object part	{"key": "hackathon/sample (1).zip", "index": 2, "size": 10000000}
+2022-05-19T22:12:14.606+0700	INFO	migration/controller.go:327	Complete migrating part	{"key": "hackathon/sample (1).zip", "index": 9}
+2022-05-19T22:12:17.713+0700	INFO	migration/controller.go:327	Upload object part	{"key": "hackathon/sample (1).zip", "index": 5, "size": 10000000}
+2022-05-19T22:12:19.986+0700	INFO	migration/controller.go:327	Upload object part	{"key": "hackathon/sample (1).zip", "index": 1, "size": 10000000}
+2022-05-19T22:12:20.346+0700	INFO	migration/controller.go:327	Upload object part	{"key": "hackathon/sample (1).zip", "index": 6, "size": 10000000}
+2022-05-19T22:12:20.464+0700	INFO	migration/controller.go:327	Upload object part	{"key": "hackathon/sample (1).zip", "index": 4, "size": 10000000}
+2022-05-19T22:12:20.985+0700	INFO	migration/controller.go:327	Upload object part	{"key": "hackathon/sample (1).zip", "index": 8, "size": 10000000}
+2022-05-19T22:12:21.213+0700	INFO	migration/controller.go:327	Upload object part	{"key": "hackathon/sample (1).zip", "index": 7, "size": 10000000}
+2022-05-19T22:12:22.971+0700	INFO	migration/controller.go:327	Complete migrating part	{"key": "hackathon/sample (1).zip", "index": 2}
+2022-05-19T22:12:23.029+0700	INFO	migration/controller.go:327	Upload object part	{"key": "hackathon/sample (1).zip", "index": 3, "size": 10000000}
+2022-05-19T22:12:24.403+0700	INFO	migration/controller.go:327	Complete migrating part	{"key": "hackathon/sample (1).zip", "index": 5}
+2022-05-19T22:12:26.921+0700	INFO	migration/controller.go:327	Complete migrating part	{"key": "hackathon/sample (1).zip", "index": 3}
+2022-05-19T22:12:29.107+0700	INFO	migration/controller.go:327	Complete migrating part	{"key": "hackathon/sample (1).zip", "index": 1}
+2022-05-19T22:12:30.670+0700	INFO	migration/controller.go:327	Complete migrating part	{"key": "hackathon/sample (1).zip", "index": 4}
+2022-05-19T22:12:30.737+0700	INFO	migration/controller.go:327	Complete migrating part	{"key": "hackathon/sample (1).zip", "index": 7}
+2022-05-19T22:12:30.749+0700	INFO	migration/controller.go:327	Complete migrating part	{"key": "hackathon/sample (1).zip", "index": 8}
+2022-05-19T22:12:31.254+0700	INFO	migration/controller.go:327	Completing multipart upload	{"key": "hackathon/sample (1).zip"}
+2022-05-19T22:12:31.401+0700	INFO	migration/controller.go:327	Completed object	{"key": "hackathon/sample (1).zip"}
+2022-05-19T22:12:31.401+0700	INFO	migration/controller.go:327	Complete migrating part	{"key": "hackathon/sample (1).zip", "index": 6}
+2022-05-19T22:12:31.401+0700	INFO	migration/controller.go:327	Complete object migration	{"key": "hackathon/sample (1).zip"}
+2022-05-19T22:12:31.401+0700	INFO	migration/controller.go:327	Getting object info	{"key": "hackathon/mmm.jpg"}
+2022-05-19T22:12:32.660+0700	INFO	migration/controller.go:327	Object size 220902	{"key": "hackathon/mmm.jpg"}
+2022-05-19T22:12:32.660+0700	INFO	migration/controller.go:327	Small object migration	{"key": "hackathon/mmm.jpg"}
+2022-05-19T22:12:32.660+0700	INFO	migration/controller.go:327	Downloading object	{"key": "hackathon/mmm.jpg"}
+2022-05-19T22:12:32.983+0700	INFO	migration/controller.go:327	Uploading object	{"key": "hackathon/mmm.jpg"}
+2022-05-19T22:12:33.150+0700	INFO	migration/controller.go:327	Complete object migration	{"key": "hackathon/mmm.jpg"}

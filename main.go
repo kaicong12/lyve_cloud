@@ -1,14 +1,38 @@
 package main
 
 import (
-	// "database/sql"
-	// _ "github.com/mattn/go-sqlite3"
-	"github.com/lyve_cloud/models"
+	"os"
+	"seagate-hackathon/migration"
+
+	"seagate-hackathon/db"
+	"seagate-hackathon/routes"
+	"seagate-hackathon/utils"
 )
 
-func main(){
+func CreateMockMigration() {
+	migration.CreateMigrationDB(db.Migration{
+		AwsAccessKey:   os.Getenv("AWS_ACCESS_KEY"),
+		AwsSecretKey:   os.Getenv("AWS_SECRET_KEY"),
+		AwsRegionName:  "ap-southeast-1",
+		AwsBucket:      "linh-testing-nhan",
+		LyveAccessKey:  os.Getenv("LYVE_ACCESS_KEY"),
+		LyveSecretKey:  os.Getenv("LYVE_SECRET_KEY"),
+		LyveRegionName: "ap-southeast-1",
+		LyveBucket:     "active-learning-linh",
+		Status:         0,
+	})
 
-	// arg1 is the db driver, arg2 is the db file location
-	// db, err := sql.Open("sqlite3", "./sqlite.db")
-	models.NewMigration()
+	migration.CreateObjectDB(db.Object{
+		Key:         "hackathon/sample (1).zip",
+		MigrationID: 1,
+	})
+}
+
+func main() {
+	db.InitDB()
+
+	utils.InitializeLogger()
+	migration.Init()
+	r := routes.SetUpRouter()
+	r.Run()
 }
