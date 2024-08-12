@@ -38,7 +38,7 @@ func onRequest() bool {
 	}
 
 	for {
-		object := GetNotStartedAndSet()
+		object, _ := GetNotStartedAndSet()
 		if object != nil {
 			time.Sleep(1 * time.Second)
 			continue

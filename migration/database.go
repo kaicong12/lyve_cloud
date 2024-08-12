@@ -1,6 +1,7 @@
 package migration
 
 import (
+	"fmt"
 	"gorm.io/gorm/clause"
 	"seagate-hackathon/db"
 )
@@ -55,15 +56,27 @@ func UpdateObjectStatus(oId uint, status db.StatusEnum) {
 	db.DbSession.Save(object)
 }
 
-func GetNotStartedAndSet() *db.Object {
-	var object = &db.Object{}
-	if err := db.DbSession.Where(&db.Object{Status: db.NotStarted}).First(object).Error; err != nil {
-		return nil
+func GetNotStartedAndSet() (*db.Object, error) {
+	var object db.Object
+    tx := db.DbSession.Begin()
+
+    if err := tx.Where("status = ?", db.NotStarted).First(&object).Error; err != nil {
+		tx.Rollback() // Rollback the transaction if there is an error
+		// if errors.Is(err, gorm.ErrRecordNotFound) {
+		// 	return nil, nil // Return nil if no record is found, without an error
+		// }
+		fmt.Println(err, "this is error")
+		return nil, err // Return the error for better handling
 	}
 
-	object.Status = db.InProgress
-	db.DbSession.Save(object)
-	return object
+    object.Status = db.InProgress
+    if err := tx.Save(&object).Error; err != nil {
+        tx.Rollback()
+        return nil, err
+    }
+
+    tx.Commit()
+    return &object, nil
 }
 
 func UpdateInProgressObjectsStatus() {
